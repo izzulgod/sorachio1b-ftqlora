@@ -110,9 +110,4 @@ print(tokenizer.decode(output[0][input_ids.shape[-1]:], skip_special_tokens=True
 This repository only contains pipeline **code**. The curated dataset and trained model weights are not included here.
 
 - Dataset: ~500k tokens of curated multi-turn Indonesian/multilingual dialogue (private).
-- Model weights: (private)
-
-## Notes & Limitations
-
-- Base model (`google/gemma-3-1b-it`) is governed by Google's **Gemma Terms of Use** — any redistribution of weights derived from it must comply with those terms.
-- This is a personal/portfolio project; the model is small (1B params) and tuned for a specific persona, so general-purpose performance outside conversational use may be limited.
+- Model weights: (private).
