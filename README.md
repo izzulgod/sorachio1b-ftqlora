@@ -1,7 +1,5 @@
 # Sorachio-1B-IT
 
-> A QLoRA fine-tuned conversational AI model built on Google's **Gemma 3 (1B)**, tuned for multilingual dialogue (with a strong focus on Indonesian) and a friendly, distinctive assistant persona.
-
 ## Overview
 
 **Sorachio-1B-IT** is a fine-tuned version of `google/gemma-3-1b-it`, optimized for multi-turn, assistant-style conversation. The project's goal wasn't just to improve technical metrics, but to shape a **consistent conversational persona** — friendly, approachable, and culturally adaptive in an Indonesian context — while remaining lightweight enough to train on a single free-tier Colab GPU.
