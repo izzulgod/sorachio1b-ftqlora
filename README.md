@@ -1,8 +1,8 @@
-# Sorachio-1B-IT
+# sorachio1b-ftqlora 
 
 ## Overview
 
-**Sorachio-1B-IT** is a fine-tuned version of `google/gemma-3-1b-it`, optimized for multi-turn, assistant-style conversation. The project's goal wasn't just to improve technical metrics, but to shape a **consistent conversational persona** — friendly, approachable, and culturally adaptive in an Indonesian context — while remaining lightweight enough to train on a single free-tier Colab GPU.
+**sorachio-1b-it** is a fine-tuned version of `google/gemma-3-1b-it`, optimized for multi-turn, assistant-style conversation. The project's goal wasn't just to improve technical metrics, but to shape a **consistent conversational persona** — friendly, approachable, and culturally adaptive in an Indonesian context — while remaining lightweight enough to train on a single free-tier Colab GPU.
 
 This repository contains the **full training pipeline** (code only — no dataset or weights), from raw dialogue curation to a deployable GGUF model.
 
