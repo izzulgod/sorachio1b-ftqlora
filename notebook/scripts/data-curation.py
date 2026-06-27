@@ -195,7 +195,6 @@ MAX_TOKENS = 2048  #@param {type:"integer"}
 
 MODEL_ID = "google/gemma-3-1b-it"  #@param {type:"string"}
 
-# Pastikan file input ada
 assert Path(INPUT_JSONL).exists(), f"File tidak ditemukan: {INPUT_JSONL}"
 print("Config OK")
 
