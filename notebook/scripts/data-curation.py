@@ -191,15 +191,13 @@ INPUT_JSONL = "/content/train.jsonl"  #@param {type:"string"}
 OUT_OK_JSONL = "/content/data_within_2048.jsonl"  #@param {type:"string"}
 OUT_LONG_JSONL = "/content/data_over_2048.jsonl"  #@param {type:"string"}
 
-# Batas konteks (token) sesuai kebutuhanmu
 MAX_TOKENS = 2048  #@param {type:"integer"}
 
-# Ganti sesuai tokenizer yang kamu pakai
 MODEL_ID = "google/gemma-3-1b-it"  #@param {type:"string"}
 
 # Pastikan file input ada
 assert Path(INPUT_JSONL).exists(), f"File tidak ditemukan: {INPUT_JSONL}"
-print("Config OK ✅")
+print("Config OK")
 
 
 #@title Load tokenizer Gemma 3 + helpers
@@ -238,7 +236,7 @@ def save_jsonl(path: str, rows: List[Dict]):
         for r in rows:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
-print("Tokenizer ready ✅")
+print("Tokenizer ready")
 
 
 #@title Cek distribusi token per row (tanpa menulis file)
@@ -293,8 +291,8 @@ with open(INPUT_JSONL, "r", encoding="utf-8") as f:
 save_jsonl(OUT_OK_JSONL, ok_rows)
 save_jsonl(OUT_LONG_JSONL, long_rows)
 
-print(f"✅ Saved within-limit rows: {len(ok_rows)} -> {OUT_OK_JSONL}")
-print(f"✅ Saved over-limit rows:   {len(long_rows)} -> {OUT_LONG_JSONL}")
+print(f"Saved within-limit rows: {len(ok_rows)} -> {OUT_OK_JSONL}")
+print(f"Saved over-limit rows:   {len(long_rows)} -> {OUT_LONG_JSONL}")
 
 
 # # Kurasi Part 3 (Finishing)
